@@ -2,5 +2,9 @@ language: python
 python:
     - 3.4
     - 3.5
-install: pip install .
-script: python -m tornado.testing testexample.test
+install:
+    - pip install .
+    - pip install coveralls
+script: coverage run --source=testexample -m tornado.testing testexample.test
+after_success:
+    coveralls
