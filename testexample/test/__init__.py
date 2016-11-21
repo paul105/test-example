@@ -1,0 +1,1 @@
+from testexample.test.test_example_app import TestExampleApp
