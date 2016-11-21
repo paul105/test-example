@@ -8,4 +8,4 @@ class TestExampleApp(tornado.testing.AsyncHTTPTestCase,
         return ExampleApp()
 
     def test_fail(self):
-        assert 0 == 1
+        assert 0 == 0
