@@ -26,7 +26,7 @@ class TestTickerHandler(tornado.testing.AsyncHTTPTestCase,
         self.assertEqual(response.code, 200)
         body = response.body.decode('utf-8')
         self.assertIn('Bitcoin prices', body)
-        self.assertIn('478.68$', body)
+        self.assertIn('$478.68', body)
 
     def test_ticker_pl(self):
         response = self.fetch('/', headers={'Accept-Language': 'pl_PL'})
