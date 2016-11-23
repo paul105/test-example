@@ -1,1 +1,2 @@
 from testexample.test.test_example_app import TestExampleApp
+from testexample.test.test_ticker_handler import TestTickerHandler
